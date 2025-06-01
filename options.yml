@@ -22,12 +22,12 @@ biome-pool:
 # or you can set the weight to 0.
 
 # World Y levels
-top-y: 500
-# Top of world above top bedrock layer.Default: 255
+top-y: 255
+# Top of world above top bedrock layer. Default: 255
 
-bedrock-top-y: 490
-# Top bedrock layer. Default: 128
-bedrock-top-buffer: 2
+bedrock-top-y: 255
+# Top of bedrock layer. Default: 128
+bedrock-top-buffer: 3
 # Additional layers of bedrock to the initial layer. Default: 2
 
 nether-top: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer}
@@ -42,7 +42,8 @@ bottom-y: 0
 # Bottom of the world including bottom bedrock layer. Default: 0
 
 palette-top:
-  - BEDROCK_TOP: $options.yml:top-y
+  - BLOCK:minecraft:air: $options.yml:top-y
+  - BLOCK:minecraft:bedrock: $options.yml:bedrock-top-y
 
 palette-bottom:
-  - BEDROCK: ${options.yml:bottom-y} + ${options.yml:bottom-buffer}
+  - BLOCK:minecraft:bedrock: ${options.yml:bottom-y} + ${options.yml:bottom-buffer}

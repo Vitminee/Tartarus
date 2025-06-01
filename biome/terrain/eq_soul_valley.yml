@@ -14,7 +14,7 @@ terrain:
     dimensions: 3
     variables: *variables
     expression: |
-      if (y >= bedrockTop, -1,
+      if (y > bedrockTop, -1,
         if (y > (bedrockTop-bedrockBuffer)-|5+(simplex2(x,z)*10)|, y,   
           max(
             max(
