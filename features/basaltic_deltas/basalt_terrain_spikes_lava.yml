@@ -11,8 +11,8 @@ distributor:
 locator:
   type: PATTERN
   range:
-    min: 1
-    max: 24
+    min: ${options.yml:bottom-y} + 5
+    max: $options.yml:nether-top
   pattern:
     type: AND
     patterns:

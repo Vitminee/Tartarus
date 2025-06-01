@@ -1,9 +1,9 @@
 biomes: 
   type: PIPELINE
-  resolution: 2
-  initial-size: 48
+  resolution: 4
   blend:
-    amplitude: 1
+    amplitude: 2
+    resolution: 2
     sampler:
       type: GAUSSIAN
   pipeline:
@@ -23,7 +23,7 @@ biomes:
           type: CELLULAR
           return: CellValue
           salt: 69420101
-          frequency: 0.03 / ${options.yml:biome-size}
+          frequency: 1 / ${options.yml:biome-size}
       - type: FRACTAL_EXPAND
         sampler:
           type: WHITE_NOISE
@@ -33,19 +33,7 @@ biomes:
       - type: FRACTAL_EXPAND
         sampler:
           type: WHITE_NOISE
-      - type: SMOOTH
-        sampler:
-          type: WHITE_NOISE
-      - type: SMOOTH
-        sampler:
-          type: WHITE_NOISE
-      - type: SMOOTH
-        sampler:
-          type: WHITE_NOISE
-      - type: SMOOTH
-        sampler:
-          type: WHITE_NOISE
-      - type: SMOOTH
+      - type: FRACTAL_EXPAND
         sampler:
           type: WHITE_NOISE
       - type: SMOOTH

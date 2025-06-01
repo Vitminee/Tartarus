@@ -5,8 +5,9 @@ extends: [ BASE, EQ_SOUL_VALLEY ]
 vanilla: minecraft:soul_sand_valley
 
 palette:
-  - SOUL_GROUND: 251
-  - << palettes/strata/strata.yml:palette
+  - << options.yml:palette-top
+  - SOUL_GROUND: $options.yml:nether-top
+  - << options.yml:palette-bottom
   
 features:
   landforms: 

@@ -1,0 +1,20 @@
+id: BEDROCK_TOP
+type: PALETTE
+
+# Placeholder expression till bedrock noise is added
+
+layers:
+  - materials:
+      - minecraft:bedrock: 1
+    layers: 1
+    sampler:
+      dimensions: 3
+      type: EXPRESSION
+      expression: |
+        if(y > bedrockLevel, -1,
+          if(y < bedrockLevel-bedrockBuffer, -1, 1
+          )
+        )
+      variables:
+        bedrockLevel: $options.yml:bedrock-top-y
+        bedrockBuffer: $options.yml:bedrock-top-buffer

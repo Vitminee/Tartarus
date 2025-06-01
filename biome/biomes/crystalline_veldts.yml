@@ -5,8 +5,9 @@ extends: [ BASE, EQ_CRYSTALLINE_VELDTS ]
 vanilla: minecraft:warped_forest
 
 palette:
-  - CRYSTALLINE_GROUND: 251
-  - << palettes/strata/strata.yml:palette
+  - << options.yml:palette-top
+  - CRYSTALLINE_GROUND: $options.yml:nether-top
+  - << options.yml:palette-bottom
   
 features:
   landforms: 
