@@ -26,9 +26,9 @@ top-y: 255
 # Top of world above top bedrock layer. Default: 255
 
 bedrock-top-y: 255
-# Top of bedrock layer. Default: 128
+# Top of bedrock layer. Default: 255
 bedrock-top-buffer: 3
-# Additional layers of bedrock to the initial layer. Default: 2
+# Additional layers of bedrock to the initial layer. Default: 3
 
 nether-top: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer}
 # Top of nether for biome palettes. Default: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer}
