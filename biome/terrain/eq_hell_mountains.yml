@@ -6,7 +6,7 @@ vars: &variables
   base: ${options.yml:bottom-y} + 20
   height: ${options.yml:bedrock-top-y} - 20
   bedrockTop: $options.yml:bedrock-top-y
-  bedrockBuffer: $options.yml:bedrock-top-buffer
+  netherTop: $options.yml:nether-top-y
 
 terrain:
   sampler:
@@ -15,7 +15,7 @@ terrain:
     variables: *variables
     expression: |
       if (y > bedrockTop, -1,
-        if (y > (bedrockTop-bedrockBuffer)-|5+(simplex2(x,z)*10)|, y,  
+        if (y > netherTop, y,
           max( -y + base +
             terraceParabolic(
               terraceParabolic(
