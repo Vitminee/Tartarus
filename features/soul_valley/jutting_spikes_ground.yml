@@ -12,7 +12,7 @@ locator:
   type: PATTERN
   range:
     min: $options.yml:lava-level
-    max: ${options.yml:nether-top} - 15
+    max: ${options.yml:nether-top-y} - 15
   pattern:
     type: AND
     patterns:

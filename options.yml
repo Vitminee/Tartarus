@@ -30,7 +30,7 @@ bedrock-top-y: 255
 bedrock-top-buffer: 5
 # Buffer for top bedrock layer. Default: 5
 
-nether-top: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer} - 1
+nether-top-y: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer} - 1
 # Top of nether for biome palettes. Default: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer}
 
 lava-level: 32

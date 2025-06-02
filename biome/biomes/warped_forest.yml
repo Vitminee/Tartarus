@@ -6,7 +6,7 @@ vanilla: minecraft:warped_forest
 
 palette:
   - << options.yml:palette-top
-  - WARPED_GROUND: $options.yml:nether-top
+  - WARPED_GROUND: $options.yml:nether-top-y
   - << options.yml:palette-bottom
   
 features:

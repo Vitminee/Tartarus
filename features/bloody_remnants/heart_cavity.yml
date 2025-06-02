@@ -13,7 +13,7 @@ locator:
   amount: 1
   height:
     min: ${options.yml:bottom-y} + 5
-    max: $options.yml:nether-top
+    max: $options.yml:nether-top-y
   standard-deviation: 8
 
 structures:

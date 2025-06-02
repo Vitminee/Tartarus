@@ -6,7 +6,7 @@ vanilla: minecraft:nether_wastes
 
 palette:
   - << options.yml:palette-top
-  - WASTING_GROUND: $options.yml:nether-top
+  - WASTING_GROUND: $options.yml:nether-top-y
   - << options.yml:palette-bottom
 
 features:

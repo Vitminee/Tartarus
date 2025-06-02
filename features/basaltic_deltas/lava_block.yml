@@ -14,7 +14,7 @@ locator:
     - type: PATTERN
       range: &range
         min: $options.yml:lava-level
-        max: $options.yml:nether-top
+        max: $options.yml:nether-top-y
       pattern:
         type: MATCH_SET
         blocks: 

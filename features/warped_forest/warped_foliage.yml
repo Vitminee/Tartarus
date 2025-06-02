@@ -14,7 +14,7 @@ locator:
     - type: SURFACE 
       range: &range
         min: $options.yml:lava-level
-        max: $options.yml:nether-top
+        max: $options.yml:nether-top-y
     - type: PATTERN
       range: *range
       pattern:

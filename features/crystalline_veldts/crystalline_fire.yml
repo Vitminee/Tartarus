@@ -12,7 +12,7 @@ locator:
   type: SURFACE
   range:
     min: ${options.yml:lava-level} + 2
-    max: $options.yml:nether-top
+    max: $options.yml:nether-top-y
 
 structures:
   distribution:
