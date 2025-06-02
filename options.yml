@@ -27,23 +27,23 @@ top-y: 255
 
 bedrock-top-y: 255
 # Top of bedrock layer. Default: 255
-bedrock-top-buffer: 3
-# Additional layers of bedrock to the initial layer. Default: 3
+bedrock-top-buffer: 5
+# Buffer for top bedrock layer. Default: 5
 
-nether-top: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer}
+nether-top: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer} - 1
 # Top of nether for biome palettes. Default: ${options.yml:bedrock-top-y} - ${options.yml:bedrock-top-buffer}
 
 lava-level: 32
 # Level of lava. Default: 32
 
-bottom-buffer: 2
-# Additional layers of bedrock to the initial bottom bedrock layer. Default: 2
+bottom-buffer: 5
+# Buffer for bottom bedrock layer. Default: 5
 bottom-y: 0
 # Bottom of the world including bottom bedrock layer. Default: 0
 
 palette-top:
-  - BLOCK:minecraft:air: $options.yml:top-y
-  - BLOCK:minecraft:bedrock: $options.yml:bedrock-top-y
+  - BEDROCK_TOP: $options.yml:top-y
 
 palette-bottom:
-  - BLOCK:minecraft:bedrock: ${options.yml:bottom-y} + ${options.yml:bottom-buffer}
+  - BEDROCK: ${options.yml:bottom-y} + ${options.yml:bottom-buffer}
+  - BLOCK:minecraft:air: ${options.yml:bottom-y} - 1
