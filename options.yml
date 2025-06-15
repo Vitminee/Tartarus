@@ -45,5 +45,6 @@ palette-top:
   - BEDROCK_TOP: $options.yml:top-y
 
 palette-bottom:
+  - BLOCK:minecraft:netherrack: ${options.yml:lava-level} - 1
   - BEDROCK: ${options.yml:bottom-y} + ${options.yml:bottom-buffer}
   - BLOCK:minecraft:air: ${options.yml:bottom-y} - 1
